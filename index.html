@@ -6,10 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciudad Fénix</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+        .a-loading-screen {
+            background: black;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
-    <a-scene>
+    <a-scene loading-screen="dotsColor: white; backgroundColor: black">
+        <a-assets>
+            <a-asset-item id="alicante" src="models/alicante.glb"></a-asset-item>
+            <a-asset-item id="arbol" src="models/arbol.glb"></a-asset-item>
+            <a-asset-item id="avenida-francia" src="models/avenida-francia.glb"></a-asset-item>
+            <a-asset-item id="barcelona" src="models/barcelona.glb"></a-asset-item>
+            <a-asset-item id="bcn" src="models/bcn.glb"></a-asset-item>
+            <a-asset-item id="bilbao" src="models/bilbao.glb"></a-asset-item>
+            <a-asset-item id="bus" src="models/bus.glb"></a-asset-item>
+            <a-asset-item id="club-nautico" src="models/club-nautico.glb"></a-asset-item>
+            <a-asset-item id="colon" src="models/colon.glb"></a-asset-item>
+            <a-asset-item id="cordoba" src="models/cordoba.glb"></a-asset-item>
+            <a-asset-item id="coruna" src="models/coruna.glb"></a-asset-item>
+            <a-asset-item id="edificio-otro" src="models/edificio-otro.glb"></a-asset-item>
+            <a-asset-item id="edificio-senorial" src="models/edificio-senorial.glb"></a-asset-item>
+            <a-asset-item id="faro" src="models/faro.glb"></a-asset-item>
+            <a-asset-item id="hotel" src="models/hotel.glb"></a-asset-item>
+            <a-asset-item id="huelva" src="models/huelva.glb"></a-asset-item>
+            <a-asset-item id="metropolis-1" src="models/metropolis-1.glb"></a-asset-item>
+            <a-asset-item id="metropolis-2" src="models/metropolis-2.glb"></a-asset-item>
+            <a-asset-item id="metropolis-3" src="models/metropolis-3.glb"></a-asset-item>
+            <a-asset-item id="metropolis-lado" src="models/metropolis-lado.glb"></a-asset-item>
+            <a-asset-item id="metropolis-punta" src="models/metropolis-punta.glb"></a-asset-item>
+            <a-asset-item id="murcia-bien" src="models/murcia-bien.glb"></a-asset-item>
+            <a-asset-item id="murcia-raro" src="models/murcia-raro.glb"></a-asset-item>
+            <a-asset-item id="murcia" src="models/murcia.glb"></a-asset-item>
+            <a-asset-item id="palmera-chonca" src="models/palmera-chonca.glb"></a-asset-item>
+            <a-asset-item id="palmera" src="models/palmera.glb"></a-asset-item>
+            <a-asset-item id="paris" src="models/paris.glb"></a-asset-item>
+            <a-asset-item id="parisino" src="models/parisino.glb"></a-asset-item>
+            <a-asset-item id="parisino-2" src="models/parisino2.glb"></a-asset-item>
+            <a-asset-item id="parterre" src="models/parterre.glb"></a-asset-item>
+            <a-asset-item id="pista" src="models/pista.glb"></a-asset-item>
+            <a-asset-item id="recoletos-12" src="models/recoletos-12.glb"></a-asset-item>
+            <a-asset-item id="relleno" src="models/relleno.glb"></a-asset-item>
+            <a-asset-item id="sevilla-bueno" src="models/sevilla-bueno.glb"></a-asset-item>
+            <a-asset-item id="sevilla" src="models/sevilla.glb"></a-asset-item>
+            <a-asset-item id="soportales" src="models/soportales.glb"></a-asset-item>
+            <a-asset-item id="otro" src="models/otro.glb"></a-asset-item>
+            <a-asset-item id="tetuan" src="models/tetuan.glb"></a-asset-item>
+            <a-asset-item id="valencia-bien" src="models/valencia-bien.glb"></a-asset-item>
+            <a-asset-item id="valencia" src="models/valencia.glb"></a-asset-item>
+            <a-asset-item id="valladolid" src="models/valladolid.glb"></a-asset-item>
+            <a-asset-item id="vapor" src="models/vapor.glb"></a-asset-item>
+            <a-asset-item id="velero" src="models/velero.glb"></a-asset-item>
+            <a-asset-item id="virgen-de-los-peligros" src="models/virgen-de-los-peligros.glb"></a-asset-item>
+            <a-asset-item id="zaragoza-bien" src="models/zaragoza-bien.glb"></a-asset-item>
+            <a-asset-item id="zaragoza" src="models/zaragoza.glb"></a-asset-item>
+            <img id="mapa" src="img/mapa.png">
+        </a-assets>
+
+
         <a-entity camera look-controls wasd-controls position="0 0.5 10"></a-entity>
 
         <a-light type="ambient" color="#FFFFFF" intensity="0.8"></a-light>
@@ -127,56 +185,6 @@
         <a-image src=“#mapa” material="alphaTest: 0.5" position=“0 -5 0” rotation=“-90 0 0”></a-image>
         <a-sky color="#ECECEC"></a-sky>
     </a-scene>
-
-    <a-assets>
-        <a-asset-item id="alicante" src="models/alicante.glb"></a-asset-item>
-        <a-asset-item id="arbol" src="models/arbol.glb"></a-asset-item>
-        <a-asset-item id="avenida-francia" src="models/avenida-francia.glb"></a-asset-item>
-        <a-asset-item id="barcelona" src="models/barcelona.glb"></a-asset-item>
-        <a-asset-item id="bcn" src="models/bcn.glb"></a-asset-item>
-        <a-asset-item id="bilbao" src="models/bilbao.glb"></a-asset-item>
-        <a-asset-item id="bus" src="models/bus.glb"></a-asset-item>
-        <a-asset-item id="club-nautico" src="models/club-nautico.glb"></a-asset-item>
-        <a-asset-item id="colon" src="models/colon.glb"></a-asset-item>
-        <a-asset-item id="cordoba" src="models/cordoba.glb"></a-asset-item>
-        <a-asset-item id="coruna" src="models/coruna.glb"></a-asset-item>
-        <a-asset-item id="edificio-otro" src="models/edificio-otro.glb"></a-asset-item>
-        <a-asset-item id="edificio-senorial" src="models/edificio-senorial.glb"></a-asset-item>
-        <a-asset-item id="faro" src="models/faro.glb"></a-asset-item>
-        <a-asset-item id="hotel" src="models/hotel.glb"></a-asset-item>
-        <a-asset-item id="huelva" src="models/huelva.glb"></a-asset-item>
-        <a-asset-item id="metropolis-1" src="models/metropolis-1.glb"></a-asset-item>
-        <a-asset-item id="metropolis-2" src="models/metropolis-2.glb"></a-asset-item>
-        <a-asset-item id="metropolis-3" src="models/metropolis-3.glb"></a-asset-item>
-        <a-asset-item id="metropolis-lado" src="models/metropolis-lado.glb"></a-asset-item>
-        <a-asset-item id="metropolis-punta" src="models/metropolis-punta.glb"></a-asset-item>
-        <a-asset-item id="murcia-bien" src="models/murcia-bien.glb"></a-asset-item>
-        <a-asset-item id="murcia-raro" src="models/murcia-raro.glb"></a-asset-item>
-        <a-asset-item id="murcia" src="models/murcia.glb"></a-asset-item>
-        <a-asset-item id="palmera-chonca" src="models/palmera-chonca.glb"></a-asset-item>
-        <a-asset-item id="palmera" src="models/palmera.glb"></a-asset-item>
-        <a-asset-item id="paris" src="models/paris.glb"></a-asset-item>
-        <a-asset-item id="parisino" src="models/parisino.glb"></a-asset-item>
-        <a-asset-item id="parisino-2" src="models/parisino2.glb"></a-asset-item>
-        <a-asset-item id="parterre" src="models/parterre.glb"></a-asset-item>
-        <a-asset-item id="pista" src="models/pista.glb"></a-asset-item>
-        <a-asset-item id="recoletos-12" src="models/recoletos-12.glb"></a-asset-item>
-        <a-asset-item id="relleno" src="models/relleno.glb"></a-asset-item>
-        <a-asset-item id="sevilla-bueno" src="models/sevilla-bueno.glb"></a-asset-item>
-        <a-asset-item id="sevilla" src="models/sevilla.glb"></a-asset-item>
-        <a-asset-item id="soportales" src="models/soportales.glb"></a-asset-item>
-        <a-asset-item id="otro" src="models/otro.glb"></a-asset-item>
-        <a-asset-item id="tetuan" src="models/tetuan.glb"></a-asset-item>
-        <a-asset-item id="valencia-bien" src="models/valencia-bien.glb"></a-asset-item>
-        <a-asset-item id="valencia" src="models/valencia.glb"></a-asset-item>
-        <a-asset-item id="valladolid" src="models/valladolid.glb"></a-asset-item>
-        <a-asset-item id="vapor" src="models/vapor.glb"></a-asset-item>
-        <a-asset-item id="velero" src="models/velero.glb"></a-asset-item>
-        <a-asset-item id="virgen-de-los-peligros" src="models/virgen-de-los-peligros.glb"></a-asset-item>
-        <a-asset-item id="zaragoza-bien" src="models/zaragoza-bien.glb"></a-asset-item>
-        <a-asset-item id="zaragoza" src="models/zaragoza.glb"></a-asset-item>
-        <img id=“mapa” src=“img/mapa.png">
-    </a-assets>
 </body>
 
 </html>

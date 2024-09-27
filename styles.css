@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border: none;
 }
 
 html {
@@ -7,12 +8,18 @@ html {
   font-size: 13px;
 }
 
-div.a-loader-title {
-  display: none !important;
+::selection {
+  background-color: black;
+  color: white;
 }
 
-button {
-  border: none;
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+div.a-loader-title {
+  display: none !important;
 }
 
 h1 {
@@ -22,15 +29,6 @@ h1 {
   background: white;
   border-bottom: 2px solid #e5e5e5;
   margin: 0;
-}
-::selection {
-  background-color: black;
-  color: white;
-}
-
-::-moz-selection {
-  background-color: black;
-  color: white;
 }
 
 nav {
@@ -108,6 +106,7 @@ p {
   padding: 8px;
   margin: 0;
 }
+
 .a-enter-vr-button {
   background: #a4a4a4;
   font-size: 14px;
@@ -116,7 +115,9 @@ p {
   border-radius: 0;
   display: none;
 }
-#myEnterVRButton {
+
+#myEnterVRButton,
+#myEnterARButton {
   z-index: 9999;
   position: fixed;
   padding-right: 0;
@@ -130,19 +131,9 @@ p {
   background: #a4a4a4;
   padding: 8px;
 }
+
 #myEnterARButton {
-  z-index: 9999;
-  position: fixed;
-  padding-right: 0;
-  padding-top: 0;
-  position: absolute;
-  right: 0;
   right: 56px;
-  bottom: 16px;
-  display: flex;
-  color: black;
-  background: #a4a4a4;
-  padding: 8px;
 }
 
 @media (max-width: 1024px) {
@@ -161,8 +152,6 @@ p {
     display: none;
     width: 100%;
     background: white;
-    font-size: 13px;
-    z-index: 1;
     position: absolute;
     top: 34px;
     margin: 0;

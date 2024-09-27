@@ -128,6 +128,20 @@ p {
   background: #a4a4a4;
   padding: 8px;
 }
+#myEnterARButton {
+    z-index: 9999;
+    position: fixed;
+    padding-right: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+    right: 56px;
+    bottom: 16px;
+    display: flex;
+    color: black;
+    background: #a4a4a4;
+    padding: 8px;
+  }
 
 @media (max-width: 1024px) {
   .item-wrapper {

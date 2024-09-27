@@ -1,4 +1,4 @@
-const desplegar = () => {
+const showMenu = () => {
   const menu = document.querySelector(".hidden-menu");
   const article = document.querySelector(".article");
 

@@ -63,7 +63,7 @@ a {
   color: black;
 }
 
-.icon {
+.menuButton {
   display: none;
   padding: 0;
 }
@@ -92,7 +92,7 @@ a {
   background-color: white;
 }
 
-article {
+.article {
   font-size: 13px;
   z-index: 1;
   position: absolute;
@@ -141,14 +141,14 @@ p {
     display: none;
   }
 
-  .icon {
+  .menuButton {
     display: block;
     border: none;
     cursor: pointer;
     background: none;
   }
 
-  article {
+  .article {
     display: none;
     width: 100%;
     background: white;

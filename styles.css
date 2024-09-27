@@ -10,9 +10,11 @@ html {
 div.a-loader-title {
   display: none !important;
 }
+
 button {
   border: none;
 }
+
 h1 {
   font-size: 13px;
   font-weight: 400;
@@ -55,7 +57,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #a4a4a4; /* Color de los enlaces */
+  color: #a4a4a4;
   font-size: 13px;
 }
 
@@ -129,19 +131,19 @@ p {
   padding: 8px;
 }
 #myEnterARButton {
-    z-index: 9999;
-    position: fixed;
-    padding-right: 0;
-    padding-top: 0;
-    position: absolute;
-    right: 0;
-    right: 56px;
-    bottom: 16px;
-    display: flex;
-    color: black;
-    background: #a4a4a4;
-    padding: 8px;
-  }
+  z-index: 9999;
+  position: fixed;
+  padding-right: 0;
+  padding-top: 0;
+  position: absolute;
+  right: 0;
+  right: 56px;
+  bottom: 16px;
+  display: flex;
+  color: black;
+  background: #a4a4a4;
+  padding: 8px;
+}
 
 @media (max-width: 1024px) {
   .item-wrapper {

@@ -8,10 +8,18 @@ html {
 }
 
 div.a-loader-title {
-    display: none !important;
+  display: none !important;
 }
 button {
-    border: none;
+  border: none;
+}
+h1 {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px;
+  background: white;
+  border-bottom: 2px solid #e5e5e5;
+  margin: 0;
 }
 ::selection {
   background-color: black;
@@ -85,30 +93,56 @@ a {
 }
 
 article {
-  background: white;
   font-size: 13px;
   z-index: 1;
   position: absolute;
-  padding: 8px 16px;
   top: 50px;
   margin: 16px;
   width: 25%;
+  background: white;
+}
+
+p {
+  padding: 8px;
+  margin: 0;
+}
+.a-enter-vr-button {
+  background: #a4a4a4;
+  font-size: 14px;
+  font-family: sans;
+  color: white;
+  border-radius: 0;
   display: none;
+}
+#myEnterVRButton {
+  z-index: 9999;
+  position: fixed;
+  padding-right: 0;
+  padding-top: 0;
+  position: absolute;
+  right: 0;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  color: black;
+  background: #a4a4a4;
+  padding: 8px;
 }
 
 @media (max-width: 1024px) {
   .item-wrapper {
-    display: none; 
+    display: none;
   }
 
   .icon {
-    display: block; 
+    display: block;
     border: none;
     cursor: pointer;
     background: none;
   }
 
   article {
+    display: none;
     width: 100%;
     background: white;
     font-size: 13px;

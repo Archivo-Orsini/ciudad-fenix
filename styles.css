@@ -206,5 +206,14 @@ p {
     position: absolute;
     top: 34px;
     margin: 0;
+    z-index: 100;
+  }
+
+  .article-tab {
+    display: none !important;
+  }
+
+  .minimize-button {
+    display: none;
   }
 }
